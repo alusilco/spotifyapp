@@ -28,6 +28,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Título</th>
+                                <th>artist</th>
                                 <th>Álbum</th>
                                 <th>Fecha en la que se añadió<img class="arrow" src="{{ asset('images/arrow.svg') }}" alt="arrow"></th>
                                 <th></th>
@@ -38,9 +39,11 @@
                             @foreach ($songs as $song)
                                 <tr>
                                     <td>{{ $song->id }}</td>
+                                    <td><a target="_blank">{{ $song->name}}</a></td>
                                     <td>{{ $song->titulo }}</td>
+                                    <td>{{ $song->artista}}</td>
                                     <td>{{ $song->album }}</td>
-                                    <td>{{ $song->añadida }}</td>
+                                    <td>{{ $song->añadida }}<img class="green-heart" src="{{ asset('images/arro.svg') }}" alt="grren heart"</td>
                                     <td>{{ $song->created_at }}</td>
                                     <td><img src="{{ asset('images/greenheart.png') }}" alt="Favorite Icon"></td>
                                 </tr>
