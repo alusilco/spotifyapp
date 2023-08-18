@@ -20,6 +20,5 @@ Route::get('/', function () {
 
 Route::get('/spotify', function () {$songs = [];
     return view('spotify', compact('songs'));
-    })->name('spot');
+})->name('spot');
 
-Route::get('spotify', [SpotifyappController::class, 'index'])->name('spotify.index');
