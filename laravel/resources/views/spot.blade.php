@@ -10,7 +10,7 @@
 <body>
     <div class="centered-image">
         <a href="{{ route('spot') }}">
-            <img src="{{ asset('images/greenplay.jpg') }}" alt="Centered Image Logo Spotify">
+            <img src="{{ asset('images/spotifyLogo.jpg') }}" alt="Centered Image Logo Spotify">
         </a>
     </div>
 </body>

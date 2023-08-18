@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+body{
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #4A3592, #463288, #342664);
+    margin: 40px;
+    margin-bottom: 0px;
+    flex: 1;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.second-container {
+    display:flex;
+    align-items: flex-start;
+    margin: 40px;
+    margin-top: 0px;
+    background: linear-gradient(to bottom, #14152B, #141319, #121212);
+    padding: 50% 0 0 0;
+
+
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #4117b7, #431CB5, #4826b0, #604fad, #686997, #727f8f);;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square img {
+    max-width: 30%;
+    max-height: 30%;
+
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+h6 {
+
+    color: white;
+    font-family: 'Changa One';
+    font-weight:100;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Changa One;
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    font-family: 'Changa One', sans-serif;
+    font-size: 76px;
+    margin-bottom: 10px;
+}
+
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 270px;
+    margin-left: 20px;
+
+}
+
+table {
+    width: 80%;
+    color: #A0A0A0;
+    font-family: 'Changa One';
+    font-size: 14px;
+    margin-top: -20px;
+    font-style: normal;
+    font-weight: 100;
+
+}

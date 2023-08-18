@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('spot');
+
 });
+
+Route::get('/spotify', function () {
+    $songs = []; 
+    return view('spotify', compact('songs'));
+})->name('spot');
