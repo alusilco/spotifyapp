@@ -23,9 +23,7 @@ body{
     margin: 40px;
     margin-top: 0px;
     background: linear-gradient(to bottom, #14152B, #141319, #121212);
-    padding: 50% 0 0 0;
-
-
+    height: 600px;
 }
 
 .square {
@@ -88,12 +86,37 @@ p {
 }
 
 table {
-    width: 80%;
+    width: 1200px;
     color: #A0A0A0;
     font-family: 'Changa One';
     font-size: 14px;
     margin-top: -20px;
     font-style: normal;
     font-weight: 100;
+    padding: 80px 20px 0px 50px;
 
 }
+
+
+.table-container {
+    width: 100%;
+    color: #A0A0A0;
+    font-family: 'Changa One';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+th, td {
+    padding: 10px 10px 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-container th,
+.table-container td {
+    text-align: center;
+}
+
+

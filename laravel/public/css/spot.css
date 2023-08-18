@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body {
     background-color: black;
   }
 
-  /* Estilos para la imagen centrada */
   .centered-image {
     text-align: center;
   }

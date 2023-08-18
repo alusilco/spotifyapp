@@ -22,7 +22,6 @@
     <main>
         <div class="second-container">
             <img class="play-icon" src="{{ asset('images/greenplay.png') }}" alt="Play Icon">
-            <div class="rectangle">
                 <div class="table-container">
                     <table>
                         <thead>
@@ -30,9 +29,9 @@
                                 <th>#</th>
                                 <th>Título</th>
                                 <th>Álbum</th>
-                                <th>Fecha en la que se añadió</th>
+                                <th>Fecha en la que se añadió<img class="arrow" src="{{ asset('images/arrow.svg') }}" alt="arrow"></th>
                                 <th></th>
-                                <th>Tiempo</th>
+                                <th><img class="clock" src="{{ asset('images/time.png') }}" alt="music duration"></th>
                             </tr>
                         </thead>
                         <tbody>
