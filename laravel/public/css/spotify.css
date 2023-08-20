@@ -112,11 +112,35 @@ table {
 th, td {
     padding: 10px 10px 10px 50px;
     border-bottom: 1px solid #ccc;
+    border: none;
 }
 
 .table-container th,
 .table-container td {
-    text-align: center;
+    text-align: left;
+
+}
+
+.bottom_line {
+    border-bottom: 3px solid #ccc;
 }
 
 
+.song-title {
+    color: white;
+    font-size: 14px;
+
+}
+
+
+.song-artist {
+    color: gray;
+    font-size: 12px;
+
+}
+
+.greenheart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -26,26 +26,26 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Título</th>
-                                <th>artist</th>
-                                <th>Álbum</th>
-                                <th>Fecha en la que se añadió<img class="arrow" src="{{ asset('images/arrow.svg') }}" alt="arrow"></th>
-                                <th></th>
-                                <th><img class="clock" src="{{ asset('images/time.png') }}" alt="music duration"></th>
+                                <th class="bottom_line">#</th>
+                                <th class="bottom_line">Título</th>
+                                <th class="bottom_line"></th>
+                                <th class="bottom_line">Álbum</th>
+                                <th class="bottom_line">Fecha en la que se añadió<img class="arrow" src="{{ asset('images/arrow.svg') }}" alt="arrow"></th>
+                                <th class="bottom_line"><img class="clock" src="{{ asset('images/time.png') }}" alt="Clock image"></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($songs as $song)
                                 <tr>
                                     <td>{{ $song->id }}</td>
-                                    <td><a target="_blank">{{ $song->name}}</a></td>
-                                    <td>{{ $song->titulo }}</td>
-                                    <td>{{ $song->artista}}</td>
+                                    <td><img src="{{ $song->image_path }}" alt="Album image"></td>
+                                    <td class="song-info">
+                                        <p class="song-title">{{ $song->titulo }}</p>
+                                        <p class="song-artist">{{ $song->artist }}</p>
+                                    </td>
                                     <td>{{ $song->album }}</td>
-                                    <td>{{ $song->añadida }}<img class="green-heart" src="{{ asset('images/arro.svg') }}" alt="grren heart"</td>
-                                    <td>{{ $song->created_at }}</td>
-                                    <td><img src="{{ asset('images/greenheart.png') }}" alt="Favorite Icon"></td>
+                                    <td class="greenheart"><img src="{{ asset('images/greenheart.png') }}" alt="green heart"></td>
+                                    <td>{{ $song->duration }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

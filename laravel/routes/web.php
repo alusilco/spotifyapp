@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SongController;
+use App\Http\Models\SongModel;
+
+
 Route::get('/', function () {
-    return view('spot');
+    return view('spot');})->name('spot');
 
-});
+Route::get('/spotify', function () {
+    return view('spotify');})->name('spotify');
 
-Route::get('/spotify', function () {$songs = [];
-    return view('spotify', compact('songs'));
-})->name('spot');
+Route::get('/spotify', [SongController::class, 'spotify']);
 
+
+
+//Route::get('/spotify', [SongController::class, 'spotify'])->name('spotify');
+//Route::get('/spotify', [SongController::class, 'spotify'])->name('spotify');
+
+
+//Route::resource('songs', SongController::class);

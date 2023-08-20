@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
+            $table->string('image_path');
             $table->string('titulo');
             $table->string('artist');
             $table->string('album');
             $table->string('created_at');
             $table->string('duration');
-            
+
 
 
         });
